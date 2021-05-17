@@ -1,0 +1,79 @@
+
+<!doctype html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<style>
+
+
+		.container {
+
+			padding: 50px;
+			margin-top: 50px;
+
+			color: white;
+		}
+
+
+		h1, h2 { text-align: center; font-size: 35px; }
+
+		.lunedi { background-color: orange; }
+		.martedi { background-color: orange; }
+		.mercoledi { background-color: green; }
+		.giovedi { background-color: orange; }
+		.venerdi { background-color: red; }
+		.sabato { background-color: black; }
+		.domenica { background-color: black; }
+
+		p {
+
+			text-align: center;
+			font-size: 25px;
+			line-height: 25px;
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+
+<script>
+	
+var today = new Date();
+
+if (today.getDay() == 1) 
+document.write('<div class="container lunedi"><!-- faccia triste --><h1>SÌ</h1><h2>Dalle 14:00 alle 18:00</h2></div>');
+
+if (today.getDay() == 2)
+document.write('<div class="container martedi"><!-- faccia triste --><h1>SÌ</h1><h2>Dalle 14:00 alle 18:00</h2></div>');
+
+if (today.getDay() == 3)
+document.write('<div class="container mercoledi"><!-- faccia in lacrime --><h1>SÌ</h1><h2>Dalle 09:00 alle 13:00<br>Dalle 14:00 alle 18:00</h2></div>');
+
+if (today.getDay() == 4)
+document.write('<div class="container giovedi"><!-- faccia triste --><h1>SÌ</h1><h2>Dalle 14:00 alle 18:00</h2></div>');
+
+if (today.getDay() == 5)
+document.write('<div class="container venerdi"><!-- faccia sorridente --><h1>NO</h1></div>');
+
+if (today.getDay() == 6)
+document.write('<div class="container sabato"><!-- faccia sganasciante --><h1>NO</h1></div>');
+
+if (today.getDay() == 0)
+document.write('<div class="container domenica"><!-- faccia sganasciante --><h1>NO</h1></div>');
+
+</script>
+
+<p>Hai ancora dubbi?</p>
+<p>Scrivi a:</p>
+<p><a href="mailto:percaso@oggimattialavorainosteo.com">percaso@oggimattialavorainosteo.com</a></p>
+
+</body>
+
+</html>
